@@ -256,7 +256,7 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_8996
 
 # LiveDisplay native
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     libjni_livedisplay
 
 # Media
