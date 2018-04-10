@@ -112,9 +112,6 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
-# CNE and DPM
-BOARD_USES_QCNE := true
-
 # Dex
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -163,9 +160,6 @@ BOARD_HARDWARE_CLASS += \
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
 
 # NFC
 BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
